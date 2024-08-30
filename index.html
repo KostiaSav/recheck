@@ -6,24 +6,25 @@
 		<title>Тестируем Заведения - Главная</title>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
 	</head>
 
 	<body>
 		<div class="page-container">
 			<header class="header">
 				<div class="container">
-					<a href="index.html">
+					<a href="index.php">
 						<h1>Тестируем Заведения</h1>
 					</a>
 
 					<nav>
-						<a href="contacts.html" class="nav-link">Контакты</a>
+						<a href="contacts.php" class="nav-link">Контакты</a>
 					</nav>
 				</div>
 			</header>
 
 			<main class="main">
-				<div class="hero">
+				<section class="hero">
 					<div class="hero__content">
 						<div class="container">
 							<h1 data-aos="fade-up" data-aos-duration="1000">
@@ -43,27 +44,7 @@
 							>
 						</div>
 					</div>
-				</div>
-
-				<div
-					class="contacts"
-					id="contacts"
-					data-aos="fade-up"
-					data-aos-duration="1000"
-				>
-					<div class="container-xl">
-						<div class="contacts__content">
-							<h2 class="contacts-title">Наши контакты:</h2>
-							<p class="contacts-line">Телефон: +380 123 456 789</p>
-							<p class="contacts-line">Email: info@testservice.com</p>
-							<p class="contacts-line">
-								Адрес: ул. Примерная, 1, Киев, Украина
-							</p>
-						</div>
-
-						<img src="assets/img/about-2.jpg" alt="about" width="50%" />
-					</div>
-				</div>
+				</section>
 
 				<section class="about" id="about">
 					<div class="container">
@@ -73,9 +54,9 @@
 							data-aos-duration="1000"
 						>
 							<img
-								src="assets/img/about-1.jpg"
+								src="assets/img/about-4.png"
 								alt="restaurant"
-								width="500px"
+								class="about-image"
 							/>
 						</div>
 
@@ -104,7 +85,7 @@
 							data-aos-duration="1000"
 						>
 							<img
-								src="assets/img/about-2.jpg"
+								src="assets/img/about-5.jpg"
 								alt="restaurant"
 								width="500px"
 							/>
@@ -135,7 +116,7 @@
 							data-aos-duration="1000"
 						>
 							<img
-								src="assets/img/about-3.jpg"
+								src="assets/img/about-6.jpg"
 								alt="restaurant"
 								width="500px"
 							/>
@@ -158,17 +139,67 @@
 					</div>
 				</section>
 
+				<section class="info_products">
+					<div class="container">
+						<div class="info_products__content">
+							<h3>Техника</h3>
+							<p>
+								Мы тестируем новейшие модели техники и предоставляем детальные
+								обзоры, чтобы помочь вам сделать правильный выбор. Также мы
+								делимся лучшими скидками и акциями, чтобы вы могли приобрести
+								технику по выгодной цене.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="products_list">
+					<div class="container">
+						<ul>
+							<li class="products_list__item">
+								<img
+									src="assets/img/bitovaya.png"
+									alt="product"
+									class="products_item-image"
+								/>
+								<h2 class="products_item-title">Бытовая техника</h2>
+								<p class="products_item-description">
+									Тестируем технику и даем честные рекомендации.
+								</p>
+							</li>
+							<li class="products_list__item">
+								<img
+									src="assets/img/tovar.png"
+									alt="tovar"
+									class="products_item-image"
+								/>
+								<h2 class="products_item-title">Потребительские товары</h2>
+								<p class="products_item-description">
+									Изучаем товары и помогаем выбрать лучшее.
+								</p>
+							</li>
+							<li class="products_list__item">
+								<img
+									src="assets/img/sale.png"
+									alt="sale"
+									class="products_item-image"
+								/>
+								<h2 class="products_item-title">Скидки и акции</h2>
+								<p class="products_item-description">
+									Находим лучшие скидки и акции.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
 				<section class="faq">
 					<div class="container">
 						<h1 class="faq-title">Ответы на вопросы</h1>
 
 						<div class="faq_vn">
 							<div id="accordion-js">
-								<div
-									class="item"
-									data-aos="fade-right"
-									data-aos-duration="1000"
-								>
+								<div class="item">
 									<div class="heading">Как вы выбираете места для обзоров?</div>
 									<div class="content">
 										Мы тщательно анализируем популярные места и новинки,
@@ -264,12 +295,40 @@
 						</div>
 					</div>
 				</section>
+
+				<section
+					class="contacts"
+					id="contacts"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+				>
+					<div class="container-xl">
+						<div class="contacts__content">
+							<h2 class="contacts-title">Наши контакты:</h2>
+							<p class="contacts-line">Телефон: +380 123 456 789</p>
+							<p class="contacts-line">Email: info@testservice.com</p>
+							<p class="contacts-line">
+								Адрес: ул. Примерная, 1, Киев, Украина
+							</p>
+						</div>
+
+						<img
+							src="assets/img/about-5.jpg"
+							alt="about"
+							class="contacts__image"
+						/>
+					</div>
+				</section>
 			</main>
 
 			<footer class="footer">
 				<div class="container">
 					<div class="footer__content">
-						<h1>Тестируем Заведения</h1>
+						<div class="footer__links">
+							<h1>Тестируем Заведения</h1>
+							<a href="privacy-policy.php">Политика конфиденциальности</a>
+							<a href="user-agreement.php">Условия пользователя</a>
+						</div>
 						<div class="footer__contacts">
 							<p>Наши контакты:</p>
 							<p>Телефон: +380 123 456 789</p>
